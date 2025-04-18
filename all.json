@@ -18,7 +18,7 @@
         },
         {
             "key": "drpy_js_可可影视",
-            "name": "哔影视[js]",
+            "name": "可可[js]",
             "type": 3,
             "api": "./xyq/dr_py/libs/drpy2.min.js",
             "ext": "./shixun/可可影视[优].js"
@@ -1026,18 +1026,18 @@
         }
     ],
     "flags": [
+        "iqiyi",
+        "pptv",
+        "letv",
+        "wasu",
+        "bilibili",
         "youku",
         "sohu",
-        "tudou",
-        "mgtv",
-        "bilibili",
-        "qiyi",
-        "letv",
         "qq",
+        "tudou",
+        "qiyi",
         "renrenmi",
-        "wasu",
-        "iqiyi",
-        "pptv"
+        "mgtv"
     ],
     "rules": [
         {
@@ -1098,7 +1098,7 @@
                 ".cdnlz"
             ],
             "regex": [
-                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?66667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:7\\.166667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
                 "#EXTINF.*?\\s+.*?08646.*?\\.ts",
                 "17.19",
                 "19.63"
@@ -1113,7 +1113,8 @@
                 "cachem3u8.2s0"
             ],
             "regex": [
-                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF.*?66667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.400000,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY",
                 "#EXTINF.*?\\s+.*?1171(057).*?\\.ts",
                 "#EXTINF.*?\\s+.*?6d7b(077).*?\\.ts",
                 "#EXTINF.*?\\s+.*?6718a(403).*?\\.ts",
@@ -1175,6 +1176,26 @@
             ]
         },
         {
+            "name": "黑木耳hmr",
+            "hosts": [
+                "hmrvideo"
+            ],
+            "regex": [
+                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3\\.366667,[\\s\\S]*?#EXT-X-DISCONTINUITY"
+            ]
+        },
+        {
+            "name": "ryplay",
+            "hosts": [
+                "cdn.ryplay"
+            ],
+            "regex": [
+                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6\\.633333,[\\s\\S]*?#EXT-X-DISCONTINUITY",
+                "#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:8\\.333333,[\\s\\S].*?\\.ts",
+                "#EXTINF:2\\.933333,[\\s\\S].*?\\.ts"
+            ]
+        },
+        {
             "name": "555DM",
             "hosts": [
                 "cqxfjz"
@@ -1222,62 +1243,62 @@
         }
     ],
     "ads": [
-        "k.wudejia.com",
-        "c.cnzz.com",
-        "img.mosflower.cn",
-        "cms.qdwght.com",
-        "z3.cnzz.com",
-        "mav.mavuz.com",
-        "tips.gamevvip.com",
-        "xc.hubeijieshikj.cn",
-        "www.google-analytics.com",
-        "wofwk.aoidf3.com",
         "tp.vinuxhome.com",
-        "stj.v1vo.top",
-        "mimg.0c1q0l.cn",
-        "hm.baidu.com",
-        "ppl.xunzhuo123.com",
-        "xg.huataisangao.cn",
-        "ae01.alicdn.com",
-        "xdn.cqqc3.com",
-        "www.92424.cn",
-        "xomk.jiangjunmh.top",
-        "cnzz.hhttm.top",
-        "cnzz.mmstat.com",
-        "s23.cnzz.com",
-        "z5.cnzz.com",
-        "k.jinxiuzhilv.com",
-        "z7.cnzz.com",
-        "z2.cnzz.com",
-        "cdnjs.hnfenxun.com",
-        "z12.cnzz.com",
-        "cdn.bootcss.com",
-        "sp.chemacid.cn",
-        "thy.dacedsfa.cn",
-        "www.jixunkyy.cn",
-        "tj.tianwenhu.com",
-        "www.baihuillq.com",
-        "q11.cnzz.com",
-        "s19.cnzz.com",
-        "www.googletagmanager.com",
-        "z1.cnzz.com",
-        "ehwe.yhdtns.com",
-        "s96.cnzz.com",
         "um.cavuc.com",
-        "s4.cnzz.com",
+        "www.baihuillq.com",
         "f5w.as12df.top",
-        "mg.g1mm3d.cn",
+        "qiu.xixiqiu.com",
+        "cnzz.hhttm.top",
+        "z12.cnzz.com",
+        "z8.cnzz.com",
+        "xg.gars57.cn",
+        "xg.huataisangao.cn",
+        "z3.cnzz.com",
+        "sp.chemacid.cn",
+        "z5.cnzz.com",
+        "s96.cnzz.com",
+        "z6.cnzz.com",
+        "thy.dacedsfa.cn",
+        "xc.hubeijieshikj.cn",
         "api.htpan.net",
+        "q11.cnzz.com",
+        "www.googletagmanager.com",
+        "www.google-analytics.com",
+        "mav.mavuz.com",
+        "s4.cnzz.com",
+        "c.cnzz.com",
+        "www.92424.cn",
+        "xdn.cqqc3.com",
+        "cnzz.mmstat.com",
+        "k.wudejia.com",
+        "wofwk.aoidf3.com",
+        "s23.cnzz.com",
+        "k.jinxiuzhilv.com",
+        "mimg.0c1q0l.cn",
+        "ehwe.yhdtns.com",
         "s9.cnzz.com",
         "img.xunzhuo123.com",
-        "xg.gars57.cn",
-        "z6.cnzz.com",
-        "s13.cnzz.com",
+        "tj.tianwenhu.com",
+        "img.mosflower.cn",
+        "xomk.jiangjunmh.top",
+        "z1.cnzz.com",
+        "cdnjs.hnfenxun.com",
+        "stj.v1vo.top",
+        "ppl.xunzhuo123.com",
         "xg.whsbpw.cn",
-        "mc.usihnbcq.cn",
+        "ae01.alicdn.com",
+        "s13.cnzz.com",
+        "cms.qdwght.com",
+        "z7.cnzz.com",
+        "mg.g1mm3d.cn",
+        "www.jixunkyy.cn",
         "mscs.svaeuzh.cn",
-        "z8.cnzz.com",
-        "qiu.xixiqiu.com",
-        "vivovip.mmszxc.top"
+        "vivovip.mmszxc.top",
+        "tips.gamevvip.com",
+        "s19.cnzz.com",
+        "z2.cnzz.com",
+        "cdn.bootcss.com",
+        "mc.usihnbcq.cn",
+        "hm.baidu.com"
     ]
 }
